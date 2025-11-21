@@ -1,0 +1,55 @@
+site_name: Cooperative Aerial-Ground Guidance System
+site_description: Documentation for the UAV–UGV Cooperative Guidance Research Project
+site_author: Project Team
+repo_url: https://github.com/<your-username>/<your-repo>   # optional
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+  font:
+    text: Inter
+    code: Fira Code
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - tables
+  - tasklist
+  - pymdownx.arithmatex
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - attr_list
+
+plugins:
+  - search
+  - mermaid2
+
+extra_css:
+  - stylesheets/extra.css   # optional if added later
+
+nav:
+  - Home: index.md
+  - Project Overview: project_overview.md
+  - Methodology:
+      - Simulation Infrastructure: methodology/simulation.md
+      - Computer Vision Module: methodology/vision.md
+      - Control Law Formulation: methodology/control.md
+  - Progress Log:
+      - Month 01: progress/month01.md
+  - Challenges & Solutions: challenges.md
+  - Planned Work: next_steps.md
+
